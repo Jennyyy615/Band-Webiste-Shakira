@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Shakira</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <nav
+      class="navbar is-fixed-top"
+      role="navigation"
+      aria-label="main navigation"
+    >
+      <div class="navbar-brand">
+        <a class="navbar-item has-text-white" href="index.html"> Shakira </a>
+
+        <a
+          role="button"
+          class="navbar-burger"
+          aria-label="menu"
+          aria-expanded="false"
+          data-target="navbarBasicExample"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item has-text-white" href="index.html"> Home </a>
+          <a class="navbar-item has-text-white" href="about.html"> About </a>
+          <a class="navbar-item has-text-white" href="music-videos.html">
+            Music Videos
+          </a>
+
+          <a class="navbar-item has-text-white" href="discography.html">
+            Discography
+          </a>
+          <a class="navbar-item has-text-white" href="tour.html"> Tour </a>
+        </div>
+      </div>
+    </nav>
+    <br /><br />
+    <div class="columns mx-1">
+      <div class="column">
+        <h1 class="display-font is-size-2 mgb-medium">Debut:</h1>
+        <h3 class="is-size-5 paragraph-font">
+          Shakira's debut album, Magia, was recorded with Sony Music Colombia in
+          1990 when she was only 13 years old. The songs are a collection made
+          by her since she was eight, mixed pop-rock ballads and disco uptempo
+          songs with electronic accompaniment.
+        </h3>
+        <br /><br />
+        <h1 class="display-font is-size-2 mgb-medium">Meet The Artist:</h1>
+        <h3 class="is-size-5 paragraph-font">
+          Shakira, in full Shakira Isabel Mebarak Ripoll, (born February 2,
+          1977, Barranquilla, Colombia), Colombian musician who achieved success
+          in both Spanish- and English-speaking markets and by the early 2000s
+          was one of the most successful Latin American recording artists.
+        </h3>
+        <br /><br />
+        <h1 class="display-font is-size-2 mgb-medium">Social Media:</h1>
+        <a href="https://www.instagram.com/shakira/?hl=en"
+          ><img class="icons" src="./images/instagram.png" alt=""
+        /></a>
+        <a href="https://www.facebook.com/shakira/"
+          ><img class="icons" src="./images/facebook.png" alt=""
+        /></a>
+      </div>
+      <div class="column">
+        <img
+          class="microphone is-pulled-right is-hidden-mobile"
+          src="./images/shakira mic.png"
+          alt="girl artist with microphone"
+        />
+      </div>
+    </div>
+    <br /><br /><br />
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        // Get all "navbar-burger" elements
+        const $navbarBurgers = Array.prototype.slice.call(
+          document.querySelectorAll(".navbar-burger"),
+          0
+        );
+
+        // Add a click event on each of them
+        $navbarBurgers.forEach((el) => {
+          el.addEventListener("click", () => {
+            // Get the target from the "data-target" attribute
+            const target = el.dataset.target;
+            const $target = document.getElementById(target);
+
+            // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+            el.classList.toggle("is-active");
+            $target.classList.toggle("is-active");
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

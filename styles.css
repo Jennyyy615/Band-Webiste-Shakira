@@ -1,0 +1,45 @@
+@import url("https://use.typekit.net/bom0lrq.css");
+@import url("https://use.typekit.net/bom0lrq.css");
+
+body {
+  background-image: url("./images/texturewallpaper.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+#home {
+  background-image: url("./images/shakira-wallpaper.jpeg");
+  background-size: cover;
+  background-position: 30% 0;
+  background-attachment: fixed;
+}
+.display-font {
+  font-family: aviano-future, sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+.paragraph-font {
+  font-family: font-family, study-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+.navbar,
+.navbar-menu {
+  background-color: #a2a1a7 !important;
+}
+.video {
+  width: 100%;
+  aspect-ratio: 16/9;
+}
+
+.album-art {
+  width: 100%;
+}
+
+.gif {
+  width: 50%;
+}
+
+.icons {
+  width: 25%;
+}

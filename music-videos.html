@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Shakira</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <nav
+      class="navbar is-fixed-top"
+      role="navigation"
+      aria-label="main navigation"
+    >
+      <div class="navbar-brand">
+        <a class="navbar-item has-text-white" href="index.html"> Shakira </a>
+
+        <a
+          role="button"
+          class="navbar-burger"
+          aria-label="menu"
+          aria-expanded="false"
+          data-target="navbarBasicExample"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item has-text-white" href="index.html"> Home </a>
+          <a class="navbar-item has-text-white" href="about.html"> About </a>
+          <a class="navbar-item has-text-white" href="music-videos.html">
+            Music Videos
+          </a>
+
+          <a class="navbar-item has-text-white" href="discography.html">
+            Discography
+          </a>
+          <a class="navbar-item has-text-white" href="tour.html"> Tour </a>
+        </div>
+      </div>
+    </nav>
+    <br /><br />
+    <div class="columns mt-2">
+      <div class="column">
+        <img src="./images/pretty.png" alt="girl artist in dress" />
+      </div>
+      <div class="column is-two-fifths">
+        <iframe
+          class="video"
+          src="https://www.youtube.com/embed/pRpeEdMmmQ0"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <div class="column">
+        <img src="./images/pretty.png" alt="girl artist in dress" />
+      </div>
+    </div>
+    <div class="columns">
+      <div class="column">
+        <iframe
+          class="video"
+          src="https://www.youtube.com/embed/4I25nV9hXGA"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <div class="column">
+        <iframe
+          class="video"
+          src="https://www.youtube.com/embed/pRpeEdMmmQ0"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <div class="column">
+        <iframe
+          class="video"
+          src="https://www.youtube.com/embed/DUT5rEU6pqM"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+    <div class="columns">
+      <div class="column">
+        <iframe
+          class="video"
+          src="https://www.youtube.com/embed/Dsp_8Lm1eSk"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <div class="column">
+        <iframe
+          class="video"
+          src="https://www.youtube.com/embed/QrOe2h9RtWI"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <div class="column">
+        <iframe
+          class="video"
+          src="https://www.youtube.com/embed/booKP974B0k"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+    <div class="columns">
+      <div class="column">
+        <iframe
+          class="video"
+          src="https://www.youtube.com/embed/sPTn0QEhxds"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <div class="column">
+        <iframe
+          class="video"
+          src="https://www.youtube.com/embed/SHq2qrFUlGY"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <div class="column">
+        <iframe
+          class="video"
+          src="https://www.youtube.com/embed/6Mgqbai3fKo"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+    <br /><br /><br /><br />
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        // Get all "navbar-burger" elements
+        const $navbarBurgers = Array.prototype.slice.call(
+          document.querySelectorAll(".navbar-burger"),
+          0
+        );
+
+        // Add a click event on each of them
+        $navbarBurgers.forEach((el) => {
+          el.addEventListener("click", () => {
+            // Get the target from the "data-target" attribute
+            const target = el.dataset.target;
+            const $target = document.getElementById(target);
+
+            // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+            el.classList.toggle("is-active");
+            $target.classList.toggle("is-active");
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Shakira</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body id="home">
+    <nav
+      class="navbar is-fixed-top"
+      role="navigation"
+      aria-label="main navigation"
+    >
+      <div class="navbar-brand">
+        <a class="navbar-item has-text-white" href="index.html"> Shakira </a>
+
+        <a
+          role="button"
+          class="navbar-burger"
+          aria-label="menu"
+          aria-expanded="false"
+          data-target="navbarBasicExample"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item has-text-white" href="index.html"> Home </a>
+          <a class="navbar-item has-text-white" href="about.html"> About </a>
+          <a class="navbar-item has-text-white" href="music-videos.html">
+            Music Videos
+          </a>
+
+          <a class="navbar-item has-text-white" href="discography.html">
+            Discography
+          </a>
+          <a class="navbar-item has-text-white" href="tour.html"> Tour </a>
+        </div>
+      </div>
+    </nav>
+    <br /><br />
+    <div class="columns mx-1">
+      <div class="column">
+        <h1 class="display-font is-size-1 mgb-medium">Shakira</h1>
+        <br />
+        <h1 class="paragraph-font is-size-2">Latest News:</h1>
+        <a href="https://www.hellomagazine.com/tags/shakira/"
+          ><img class="icons" src="./images/hellomagazine.png" alt="red icon"
+        /></a>
+        <br /><br />
+        <a href="https://people.com/tag/shakira/"
+          ><img class="icons" src="./images/peoplemagazine.png" alt="blue icon"
+        /></a>
+        <br /><br />
+        <h1 class="paragraph-font is-size-2">Where To Stream:</h1>
+        <a href="https://www.youtube.com/c/Shakira"
+          ><img class="icons" src="./images/youtube.png" alt="red icon"
+        /></a>
+        <a
+          href="https://www.hbomax.com/feature/urn:hbo:feature:GXic2JAYytVHDwwEAAABg"
+          ><img class="icons" src="./images/hbo.png" alt="purple icon"
+        /></a>
+        <br /><br />
+        <h1 class="paragraph-font is-size-2 mgb-medium">Social Media:</h1>
+        <a href="https://www.instagram.com/shakira/?hl=en"
+          ><img
+            class="icons"
+            src="./images/instagram.png"
+            alt="social media icon"
+        /></a>
+        <a href="https://www.facebook.com/shakira/"
+          ><img
+            class="icons"
+            src="./images/facebook.png"
+            alt="social media icon"
+        /></a>
+      </div>
+      <div class="column">
+        <figure
+          class="image is-128x128 is-hidden-desktop is-justify-content-space-around"
+        >
+          <img src="./images/shakiraaa.png" />
+        </figure>
+      </div>
+    </div>
+    <br /><br /><br /><br /><br /><br />
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        // Get all "navbar-burger" elements
+        const $navbarBurgers = Array.prototype.slice.call(
+          document.querySelectorAll(".navbar-burger"),
+          0
+        );
+
+        // Add a click event on each of them
+        $navbarBurgers.forEach((el) => {
+          el.addEventListener("click", () => {
+            // Get the target from the "data-target" attribute
+            const target = el.dataset.target;
+            const $target = document.getElementById(target);
+
+            // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+            el.classList.toggle("is-active");
+            $target.classList.toggle("is-active");
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
